@@ -1,0 +1,39 @@
+#include <stdio.h>
+//Vinicius Mendes UC22101690
+
+int main() {
+	
+	float n1, n2, n3;
+	float soma;
+	
+	printf("========== MEDIA ARITMETICA ==========");
+	
+	printf("\n Digite o 1 numero:");
+	scanf("%f", &n1);
+	
+	printf("\n Digite o 2 numero:");
+	scanf("%f", &n2);
+	
+	printf("\n Digite o 3 numero:");
+	scanf("%f", &n3);
+	
+	if(n1>0){
+		soma = (n1 + n2 + n3)/3;
+		printf("\nvalor aritmetico: %.1f",soma);
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	return 0;
+}

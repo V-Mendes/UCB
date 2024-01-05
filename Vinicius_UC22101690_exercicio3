@@ -1,0 +1,29 @@
+#include <stdio.h>
+//Vinicius Mendes UC22101690
+
+int main() {
+	
+	//numeros distintos
+	
+	
+	
+	int numero1;
+	int numero2;
+	
+	printf("==========O MAIOR NUMERO========== \n");
+	
+	printf("Escreva o primeiro numero:");
+	scanf("%d", &numero1);
+	
+	printf("Escreva o segundo numero:");
+	scanf("%d", &numero2);
+	
+	if(numero1>numero2){
+		printf("O primeiro numero e maior que o segundo");
+	}
+	if(numero1<numero2){
+		printf("O segundo numero e maior que o primeiro");
+	}
+	
+	return 0;
+}

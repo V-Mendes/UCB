@@ -1,0 +1,50 @@
+#include <stdio.h>
+
+
+int main() {
+	float m3=0;
+	int mes=0, ano=0;
+	char bissexto[20], result[20];
+	
+	printf("Informe a quantidade de metros cubicos: \n");
+	scanf(" %f",&m3);
+	
+	if(m3 < 0){
+		printf("Informe um valor positivo!");
+		return 0;
+	}else{		
+		if(m3 <= 2.1){
+			strcpy(result, "Consumo baixo");
+		}else if(m3 > 2.1 && m3 <=6.1){
+			strcpy(result, "Consumo normal");
+		}else if(m3 > 6.1 && m3 <= 10.5){
+			strcpy(result, "Consumo alto");
+		}else if(m3 > 10.5){
+			strcpy(result, "Consumo exagerado");
+		}	
+	}
+	
+	printf("Informe o mes: \n");
+	printf("ex: 1 = janeiro, 12 = dezembro\n");
+	scanf(" %i",&mes);
+	
+	if(mes < 0 && mes > 12){
+		printf("Voce informou um mes incorreto!");
+		return 0;
+	}else{
+		printf("Informe o ano: \n");
+		scanf(" %i",&ano);
+		
+		if(ano % 4 == 0 && ano % 100 != 0 || ano % 400 == 0){
+			strcpy(bissexto, "Ano bissexto");
+		}else{
+			strcpy(bissexto, "Ano nao bissexto");
+		}		
+	}
+	printf("O consumo eh de: %.2f\n", m3);
+	printf("Classificacao: %s\n", result);
+	printf("Mes: %d\n", mes);
+	printf("Ano: %d\n", ano);
+	printf("Bissexto? : %s\n", bissexto);
+	return 0;
+}

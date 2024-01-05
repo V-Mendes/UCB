@@ -1,0 +1,25 @@
+#include <stdio.h>
+//Vinicius Mendes UC22101690
+
+int main() {
+	
+	float p = 0.25, r = 0;
+	int qnt;	
+	
+	printf("======= XEROX =======\n");
+	printf("Quantas copias? ");
+	scanf("%d", &qnt);
+	
+	if(qnt > 100){
+		p = 0.20;
+		r = p * qnt;
+		printf("cada copia e 0,20\n");
+	}else{
+		r = p * qnt;
+		printf("cada copia e 0,25\n");
+	}
+	
+	printf("O valor a ser pago eh: %.2f", r);
+	
+	return 0;
+}
